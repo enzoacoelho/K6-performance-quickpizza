@@ -43,6 +43,10 @@ k6 run --vus 1 --duration 5s src/scripts/stress-test.js
 $env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="reports/stress-test-report.html"; $env:K6_WEB_DASHBOARD_PERIOD="5s"; k6 run src/scripts/stress-test.js
 ```
 
+```Bash
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=reports/stress-test-report.html k6 run src/scripts/stress-test.js
+```
+
 ---
 
 ## Executar Spike Test (Teste de Pico)
@@ -59,4 +63,7 @@ $env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="reports/stress-test-
 **Execução via terminal:**
 ```powershell
 $env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="reports/spike-test-report.html"; $env:K6_WEB_DASHBOARD_PERIOD="5s"; k6 run src/scripts/spike-test.js
+```
+```Bash
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=reports/spike-test-report.html k6 run src/scripts/spike-test.js
 ```
