@@ -18,7 +18,7 @@ O projeto está organizado para separar as configurações globais dos scripts d
     * **scripts/**: Scripts de teste que executam os cenários de carga.
         * `smoke-test.js`: Teste rápido de validação (2 VUs).
         * `stress-test.js`: Teste de carga progressiva (até 200 VUs).
-        * `spike-test.js`: Teste de pico repentino (até 500 VUs).
+        * `spike-test.js`: Teste de pico repentino (até 300 VUs).
 * **reports/**: Pasta destinada aos relatórios gerados pelo K6 Web Dashboard (HTML e prints).
     * **stress-test/**: 
         * `report.html`: Relatório interativo do K6.
