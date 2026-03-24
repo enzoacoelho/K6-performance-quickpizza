@@ -78,7 +78,6 @@ k6 run src/scripts/stress-test.js
 
 **Objetivo:** Avaliar a estabilidade da API sob um pico repentino e agressivo de acessos simultâneos.
 
-**Endpoint:** `/api/recommendations`
 * **Configuração do teste:**
     * **VUs:** Salto rápido até 300 usuários.
     * **Estágios:**
