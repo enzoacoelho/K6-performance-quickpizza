@@ -113,7 +113,7 @@ Os relatórios detalhados em HTML e as evidências estão localizados na pasta `
 
 ### 🧪 1. Stress Test (200 VUs)
 
-**Análise:** Estabilidade total com carga progressiva. Taxa de erro de 0% e latência estável em 157ms.
+**Análise:** Estabilidade total com carga progressiva. Taxa de erro de 0,0% e latência média de 155ms, com picos de 167ms no percentil 95 (p95).
 
 #### 📈 Overview
 ![Stress Overview](./reports/stress-test/stress-test-overview.png)
@@ -125,7 +125,7 @@ Os relatórios detalhados em HTML e as evidências estão localizados na pasta `
 
 ### 🧪 2. Spike Test (500 VUs)
 
-**Análise:** Avaliação de resiliência sob salto repentino de tráfego de 0 a 300 VUs.
+**Análise:** Avaliação de resiliência sob salto repentino de tráfego de 0 a 200 VUs.
 
 #### 📈 Overview
 ![Spike Overview](./reports/spike-test/spike-test-overview.png)
