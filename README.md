@@ -4,7 +4,7 @@
 
 # 🎯 Objetivo
 
-Este projeto automatiza testes de performance utilizando a ferramenta **K6**. A estrutura foi desenhada para separar configurações globais (`base.js`) dos scripts de execução.
+Este projeto utiliza o **K6** para testes de performance, com uma estrutura que separa as configurações globais, scripts de execução e a organização de evidências (reports) por tipo de teste.
 
 ---
 
