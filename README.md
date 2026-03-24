@@ -125,7 +125,7 @@ Os relatórios detalhados em HTML e as evidências estão localizados na pasta `
 
 ### 🧪 2. Spike Test (500 VUs)
 
-**Análise:** Avaliação de resiliência sob salto repentino de tráfego de 0 a 200 VUs.
+**Análise:** Avaliação de resiliência sob salto repentino de tráfego de 0 a 300 VUs.
 
 #### 📈 Overview
 ![Spike Overview](./reports/spike-test/spike-test-overview.png)
