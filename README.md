@@ -116,10 +116,10 @@ Os relatórios detalhados em HTML e as evidências estão localizados na pasta `
 **Análise:** Estabilidade total com carga progressiva. Taxa de erro de 0% e latência estável em 157ms.
 
 #### 📈 Overview
-![Stress Overview](./reports/stress-test/stress-overview.png)
+![Stress Overview](./reports/stress-test/stress-test-overview.png)
 
 #### 📝 Summary
-![Stress Summary](./reports/stress-test/stress-summary.png)
+![Stress Summary](./reports/stress-test/stress-test-summary.png)
 
 ---
 
@@ -128,7 +128,7 @@ Os relatórios detalhados em HTML e as evidências estão localizados na pasta `
 **Análise:** Avaliação de resiliência sob salto repentino de tráfego de 0 a 300 VUs.
 
 #### 📈 Overview
-![Spike Overview](./reports/spike-test/spike-overview.png)
+![Spike Overview](./reports/spike-test/spike-test-overview.png)
 
 #### 📝 Summary
-![Spike Summary](./reports/spike-test/spike-summary.png)
+![Spike Summary](./reports/spike-test/spike-test-summary.png)
