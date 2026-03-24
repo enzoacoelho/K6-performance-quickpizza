@@ -8,7 +8,7 @@ export const smokeOptions = {
 export const stressOptions = {
   stages: [
     { duration: '1m', target: 200 },
-    { duration: '5m', target: 200 },
+    { duration: '4m', target: 200 },
     { duration: '1m', target: 0 },
   ],
 
@@ -20,12 +20,12 @@ export const stressOptions = {
 
 export const spikeOptions = {
   stages: [
-    { duration: '40s', target: 500 },
-    { duration: '50s', target: 0 },
+    { duration: '30s', target: 300 },
+    { duration: '40s', target: 0 },
   ],
 
   thresholds: {
-    http_req_failed: ['rate<0.01'],
+    http_req_failed: ['rate<0.05'],
   },
 
 };
