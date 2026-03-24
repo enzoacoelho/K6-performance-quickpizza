@@ -20,7 +20,16 @@ O projeto está organizado para separar as configurações globais dos scripts d
         * `stress-test.js`: Teste de carga progressiva (até 200 VUs).
         * `spike-test.js`: Teste de pico repentino (até 500 VUs).
 * **reports/**: Pasta destinada aos relatórios gerados pelo K6 Web Dashboard (HTML e prints).
+    * **stress-test/**: 
+        * `report.html`: Relatório interativo do K6.
+        * `overview.png`: Print do dashboard com métricas de performance (155ms).
+        * `summary.png`: Print do resumo final da execução.
+    * **spike-test/**: 
+        * `report.html`: Relatório interativo do K6.
+        * `overview.png`: Visão geral do pico de carga.
+        * `summary.png`: Resumo das métricas de spike.
 * **README.md**: Documentação do projeto e instruções de execução.
+
 
 ---
 
