@@ -12,10 +12,10 @@ Este projeto utiliza o **K6** para testes de performance, com uma estrutura que 
 
 O projeto está organizado para separar as configurações globais dos scripts de execução, facilitando a manutenção dos testes.
 
-* **src/**: Pasta raiz do código fonte.
+* **src/**: Pasta raiz.
     * **config/**: Contém as configurações de ambiente e opções de carga (VUs, Duração, Thresholds).
         * `base.js`: Centraliza a URL base e os objetos `smokeOptions`, `stressOptions` e `spikeOptions`.
-    * **scripts/**: Scripts de teste que executam os cenários de carga.
+    * **scripts/**: Scripts de execução.
         * `smoke-test.js`: Teste rápido de validação (2 VUs).
         * `stress-test.js`: Teste de carga progressiva (até 200 VUs).
         * `spike-test.js`: Teste de pico repentino (até 300 VUs).
@@ -35,13 +35,13 @@ O projeto está organizado para separar as configurações globais dos scripts d
 
 ## 🚀 Execução e Análise de Performance
 
-Abaixo seguem os detalhes de configuração, comandos de execução e evidências dos testes de carga realizados na API.
+Abaixo seguem os detalhes de configuração, comandos de execução e evidências dos testes de carga realizados.
 
 ---
 
 ## 🧪 1. Executar Smoke Tests 
 
-**Objetivo:** Validar se a API está no ar e respondendo com status code 200 OK.
+**Objetivo:** Validar se a aplicação está no ar e respondendo com status code 200 OK.
 
 * **Configuração do teste:**
     * **VUs:** 2
@@ -62,7 +62,7 @@ k6 run --vus 2 --duration 10s src/scripts/stress-test.js
     * **VUs:** Aumento gradativo.
     * **Estágios:**
         * **Ramp-Up:** de 1 até 200 VUs em 1 minuto.
-        * **Pico:** mantém 200 VUs por 5 minutos.
+        * **Pico:** mantém 200 VUs por 4 minutos.
         * **Ramp-Down:** de 200 VUs até 0 em 1 minuto.
 
 **Execução e Geração de Relatório via terminal:**
@@ -85,7 +85,7 @@ k6 run src/scripts/stress-test.js
 
 ## 🧪 3. Executar Spike Test (Teste de Pico)
 
-**Objetivo:** Avaliar a estabilidade da API sob um pico repentino e agressivo de acessos simultâneos.
+**Objetivo:** Avaliar a estabilidade da aplicação com um pico repentino e agressivo de acessos simultâneos.
 
 * **Configuração do teste:**
     * **VUs:** Salto rápido até 300 usuários.
